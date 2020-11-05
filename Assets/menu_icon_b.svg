@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu_icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu_icon" transform="translate(1.000000, 1.000000)" stroke="#000000" stroke-width="2">
+            <rect id="Rectangle" x="0" y="0" width="44" height="44"></rect>
+            <line x1="10.4" y1="21.5" x2="33.6" y2="21.5" id="Line" stroke-linecap="square"></line>
+            <line x1="10.4" y1="11.5" x2="33.6" y2="11.5" id="Line-Copy" stroke-linecap="square"></line>
+            <line x1="10.4" y1="31.5" x2="33.6" y2="31.5" id="Line-Copy-2" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

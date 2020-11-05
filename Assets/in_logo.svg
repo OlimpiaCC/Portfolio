@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV-Copy" transform="translate(-43.000000, -916.000000)">
+            <g id="Group-3">
+                <g id="menu">
+                    <g id="Group-4" transform="translate(43.000000, 916.000000)">
+                        <circle id="Oval" fill="#FFFFFF" cx="19.5" cy="19.5" r="19.5"></circle>
+                        <polygon id="Path" fill="#000000" fill-rule="nonzero" points="14 30 10 30 10 17 14 17"></polygon>
+                        <path d="M12.5,15 C11.1196319,15 10,13.8620594 10,12.4882043 C10,11.114007 11.1192881,10 12.5,10 C13.8807119,10 15,11.114007 15,12.4882043 C15,13.8620594 13.8799033,15 12.5,15 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                        <path d="M29.9955101,30 L25.8342889,30 L25.8342889,23.3515982 C25.8342889,21.7671233 25.8028597,19.7351598 23.6661256,19.7351598 C21.4979623,19.7351598 21.1657111,21.456621 21.1657111,23.2374429 L21.1657111,30 L17,30 L17,16.3424658 L20.9995855,16.3424658 L20.9995855,18.2054795 L21.057954,18.2054795 C21.6146992,17.1324201 22.974684,16 25.003661,16 C29.2241486,16 30,18.826484 30,22.4977169 L30,30 L29.9955101,30 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

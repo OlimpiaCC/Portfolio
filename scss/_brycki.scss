@@ -1,0 +1,118 @@
+.brycki-bg {
+    background: url("../Assets/brycki_bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.brycki-case-slider {
+    height: 120vh;
+    background-color: #111111;
+
+    .carousel {
+        display: flex;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        font-family: Arial;
+        margin-top: -10%;
+
+
+        &__list {
+            display: flex;
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            perspective: 300px;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0px;
+            width: 30%;
+            height: 900px;
+            // box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+            position: absolute;
+            transition: all .3s ease-in;
+
+            &:nth-child(1) {
+                background: url("../Assets/brycki1.jpg") no-repeat;
+                background-size: cover;
+
+
+
+            }
+
+            &:nth-child(2) {
+                background: url("../Assets/brycki3.jpg") no-repeat;
+                background-size: contain;
+
+
+
+
+            }
+
+            &:nth-child(3) {
+                background: url("../Assets/brycki1.jpg") no-repeat;
+                background-size: cover;
+
+            }
+
+            &:nth-child(4) {
+                background: url("../Assets/brycki2.jpg") no-repeat;
+                background-size: cover;
+
+            }
+
+            &:nth-child(5) {
+                background: url("../Assets/brycki3.jpg") no-repeat;
+                background-size: contain;
+
+            }
+
+
+
+
+
+
+            &[data-pos="0"] {
+                z-index: 5;
+            }
+
+            &[data-pos="-1"],
+            &[data-pos="1"] {
+                opacity: 0.7;
+                filter: blur(1px) grayscale(10%);
+            }
+
+            &[data-pos="-1"] {
+                transform: translateX(-40%) scale(.9);
+                z-index: 4;
+            }
+
+            &[data-pos="1"] {
+                transform: translateX(40%) scale(.9);
+                z-index: 4;
+            }
+
+            &[data-pos="-2"],
+            &[data-pos="2"] {
+                opacity: 0.4;
+                filter: blur(3px) grayscale(20%);
+            }
+
+            &[data-pos="-2"] {
+                transform: translateX(-70%) scale(.8);
+                z-index: 3;
+            }
+
+            &[data-pos="2"] {
+                transform: translateX(70%) scale(.8);
+                z-index: 3;
+            }
+        }
+    }
+}

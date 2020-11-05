@@ -1,0 +1,566 @@
+.case-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+
+    .menu-icon {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .case-text {
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 10%;
+
+
+    }
+
+    .case-title {
+
+        padding: 20px 0;
+    }
+
+    p {
+        padding: 20px 0;
+    }
+
+    .button-see {
+        display: inline-block;
+        margin-top: 40px;
+    }
+
+
+
+    .line {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
+
+}
+
+.woodland-bg {
+    background: url("../Assets/woodland_bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.woodland-case-slider {
+    height: 120vh;
+    background-color: #111111;
+
+    .carousel {
+        display: flex;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        font-family: Arial;
+        margin-top: -10%;
+
+
+        &__list {
+            display: flex;
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            perspective: 300px;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0px;
+            width: 30%;
+            height: 700px;
+            overflow: hidden;
+            // box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+            position: absolute;
+            transition: all .3s ease-in;
+
+            &:nth-child(1) {
+                background: url("../Assets/woodland_1.jpg") no-repeat;
+                background-size: cover;
+
+
+
+            }
+
+            &:nth-child(2) {
+                background: url("../Assets/woodland_2.jpg") no-repeat;
+                background-size: cover;
+
+
+
+
+            }
+
+            &:nth-child(3) {
+                background: url("../Assets/woodland_3.jpg") no-repeat;
+                background-size: contain;
+
+
+
+
+
+            }
+
+            &:nth-child(4) {
+                background: url("../Assets/woodland_4.jpg") no-repeat;
+                background-size: contain;
+
+
+
+
+            }
+
+            &:nth-child(5) {
+                background: url("../Assets/woodland_5.jpg") no-repeat;
+                background-size: contain;
+
+
+
+            }
+
+            &[data-pos="0"] {
+                z-index: 5;
+            }
+
+            &[data-pos="-1"],
+            &[data-pos="1"] {
+                opacity: 0.7;
+                filter: blur(1px) grayscale(10%);
+            }
+
+            &[data-pos="-1"] {
+                transform: translateX(-40%) scale(.9);
+                z-index: 4;
+            }
+
+            &[data-pos="1"] {
+                transform: translateX(40%) scale(.9);
+                z-index: 4;
+            }
+
+            &[data-pos="-2"],
+            &[data-pos="2"] {
+                opacity: 0.4;
+                filter: blur(3px) grayscale(20%);
+            }
+
+            &[data-pos="-2"] {
+                transform: translateX(-70%) scale(.8);
+                z-index: 3;
+            }
+
+            &[data-pos="2"] {
+                transform: translateX(70%) scale(.8);
+                z-index: 3;
+            }
+        }
+    }
+}
+
+.case-colors {
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+    position: relative;
+
+
+    &::before {
+        content: '';
+        color: #EDE3E7;
+        left: 10%;
+        top: 20%;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        background: url("../Assets/01.svg") no-repeat center;
+        background-size: contain;
+    }
+
+    .case-color-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 60px;
+
+        @include breakpoint(phablet) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+        }
+
+        &__text {
+            width: 34%;
+            padding-right: 10%;
+
+            @include breakpoint(phablet) {
+                width: 100%;
+                padding-bottom: 40px;
+
+            }
+
+
+            h3 {
+                padding-bottom: 20px;
+            }
+
+            p {
+
+                border-left: 1px solid #606060;
+                font-size: 12px;
+                line-height: 22px;
+                padding-left: 10px;
+            }
+        }
+
+
+
+        .primary-colors {
+            display: flex;
+            width: 45%;
+
+
+            @include breakpoint(phablet) {
+                width: 100%;
+                justify-content: center;
+
+            }
+
+
+
+
+
+            &__codes {
+                padding-top: 43px;
+                padding-left: 10px;
+
+
+                p {
+
+                    font-size: 12px;
+                    line-height: 20px;
+
+                }
+
+            }
+        }
+
+        .bg-colors {
+            display: flex;
+
+            width: 45%;
+
+            @include breakpoint(phablet) {
+                width: 100%;
+                justify-content: center;
+
+            }
+
+            &__text {
+                width: 40%;
+                padding-right: 10%;
+
+
+
+                h3 {
+                    padding-bottom: 20px;
+                }
+
+
+                p {
+                    border-left: 1px solid #606060;
+                    font-size: 12px;
+                    line-height: 22px;
+                    padding-left: 10px;
+                }
+            }
+
+            &__codes {
+                padding-top: 43px;
+                padding-left: 10px;
+
+                p {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+
+            }
+        }
+    }
+}
+
+.case-typo {
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+    position: relative;
+
+    &::before {
+        content: '';
+        color: #EDE3E7;
+        left: 10%;
+        top: 12%;
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        background: url("../Assets/02.svg") no-repeat center;
+        background-size: contain;
+
+        @include breakpoint(phablet) {
+            top: 1%;
+
+
+        }
+
+    }
+
+
+}
+
+.typo-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+
+
+    .last-typo {
+        @include breakpoint(phablet) {
+            display: none;
+
+        }
+    }
+
+    @include breakpoint(phablet) {
+        flex-wrap: wrap;
+        padding-top: 40px;
+
+    }
+
+    img {
+
+        @include breakpoint(phablet) {
+            padding-bottom: 40px;
+
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #111111;
+    padding-top: 200px;
+
+    @include breakpoint(phablet) {
+        padding-top: 60px;
+
+    }
+
+    .footer-bg {
+        width: 100%;
+        height: auto;
+
+        @include breakpoint(phablet) {
+            height: 200px;
+            object-fit: cover;
+
+        }
+    }
+
+
+
+    .footer-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+
+        .button-left {
+            padding-bottom: 20px;
+            padding-left: 20px;
+
+            .button-prev {
+                display: inline-flex;
+                border: 1px solid #B2B2B2;
+                padding: 0 30px;
+                text-decoration: none;
+                height: 46px;
+                line-height: 48px;
+                margin-right: 10px;
+                border-radius: 50px;
+                letter-spacing: 1px;
+
+                &:hover {
+                    border: 1px solid white;
+
+                }
+
+
+
+
+
+
+                &:hover .button-prev-sym,
+                &:hover .button-prev-svg {
+                    position: relative;
+                    animation-name: prev;
+                    animation-duration: 0.4s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate-reverse;
+
+                }
+
+                @keyframes prev {
+                    0% {
+                        left: 0px;
+                    }
+
+                    100% {
+                        left: 5px;
+                    }
+                }
+
+
+                .button-prev-sym {
+                    padding-right: 20px;
+                }
+
+            }
+        }
+
+
+
+        .button-right {
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 20px;
+            padding-right: 20px;
+
+
+            .button-next {
+                display: flex;
+                border: 1px solid #B2B2B2;
+                padding: 0 30px;
+                text-decoration: none;
+                height: 46px;
+                line-height: 48px;
+                margin-right: 10px;
+                border-radius: 50px;
+                letter-spacing: 1px;
+
+                &:hover {
+                    border: 1px solid white;
+                }
+
+
+
+                &:hover .button-next-sym,
+                &:hover .button-next-svg {
+                    position: relative;
+                    animation-name: next;
+                    animation-duration: 0.4s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate-reverse;
+                }
+
+                @keyframes next {
+                    0% {
+                        left: 0px;
+                    }
+
+                    100% {
+                        left: 5px;
+                    }
+                }
+
+
+                .button-next-sym {
+                    padding-left: 20px;
+                }
+
+            }
+
+            .button-up {
+                display: flex;
+                justify-content: center;
+                height: 46px;
+                width: 46px;
+                border: 1px solid #B2B2B2;
+                border-radius: 50px;
+
+                &:hover {
+                    border: 1px solid white;
+
+                }
+
+
+                &:hover img,
+                &:hover .button-up-svg {
+                    position: relative;
+                    animation-name: up;
+                    animation-duration: 0.4s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate-reverse;
+                }
+
+                @keyframes up {
+                    0% {
+                        top: 0px;
+                    }
+
+                    100% {
+                        top: 5px;
+                    }
+                }
+
+
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+
+}
+
+.mockup {
+    z-index: 10;
+    width: 600px;
+    height: auto;
+    margin: 0 auto -200px auto;
+
+    @include breakpoint(phablet) {
+        width: 60%;
+        margin: 0 auto -50px auto;
+
+    }
+
+
+}

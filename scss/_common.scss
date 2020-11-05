@@ -1,0 +1,119 @@
+@font-face {
+    font-family: ProximaBold;
+    src: url(../Assets/Fonts/ProximaNovaBold.otf);
+}
+
+@font-face {
+    font-family: ProximaLight;
+    src: url(../Assets/Fonts/ProximaNova-Light.otf);
+}
+
+@font-face {
+    font-family: ProximaRegular;
+    src: url(../Assets/Fonts/ProximaNova-Regular.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'ProximaLight';
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+}
+
+h1 {
+    font-family: "ProximaBold";
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+
+}
+
+h3 {
+    font-size: 14px;
+    font-family: "ProximaRegular";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+.button-more,
+.button-visit,
+.button {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 20;
+
+
+    @include breakpoint(phablet) {
+        margin-top: 20px;
+
+    }
+
+}
+
+.button-visit {
+    margin-left: 20px;
+}
+
+
+
+a:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    z-index: 20;
+}
+
+a {
+    transition: 0.3s;
+}
+
+
+
+.black {
+    color: black;
+}
+
+.black-button:hover {
+    color: black;
+    border: 1px solid black;
+
+}
+
+#border-black {
+    border: 1px solid #646464;
+
+    &:hover {
+        color: black;
+        border: 1px solid black;
+
+
+    }
+
+
+}
+
+
+

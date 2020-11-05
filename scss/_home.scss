@@ -1,0 +1,604 @@
+.nav-wrapper {
+    position: relative;
+
+    .left-block {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        width: 80px;
+        background-color: black;
+        z-index: 20;
+
+        img {
+            padding: 10px;
+        }
+
+        @include breakpoint(newMobile) {
+            display: none;
+        }
+
+
+        .contact-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                padding: 10px;
+            }
+        }
+
+        .small-nav {
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            left: 1%;
+            top: 30%;
+            scroll-behavior: smooth;
+
+            a {
+                display: block;
+                width: 30px;
+                text-decoration: none;
+                font-size: 8px;
+                border: 1px solid transparent;
+                border-bottom: 1px solid #1A1A1A;
+                color: #1A1A1A;
+                transition: 0.5s;
+
+                &:hover {
+                    width: 50px;
+                    color: white;
+                    border-bottom: 1px solid white;
+
+
+                }
+            }
+        }
+    }
+
+    .menu-icon {
+        padding: 10px;
+        z-index: 10;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 20;
+
+
+    }
+}
+
+.section {
+    display: flex;
+
+
+
+
+    &__text-box {
+        width: 40%;
+        padding-left: 15%;
+        padding-top: 10%;
+
+        @include breakpoint(phablet) {
+            width: 90%;
+            height: 50%;
+            padding-left: 20%;
+            padding-top: 8%;
+
+        }
+
+        @include breakpoint(newMobile) {
+            padding-left: 10%;
+        }
+
+        p {
+            padding-bottom: 40px;
+
+            @include breakpoint(phablet) {
+                padding-bottom: 10px;
+                padding-right: 20%;
+
+            }
+
+            @include breakpoint(newMobile) {
+                padding-right: 10%;
+            }
+
+
+
+        }
+
+
+        h1 {
+            padding: 5px 0 40px 0;
+
+            @include breakpoint(phablet) {
+                font-size: 30px;
+                padding: 5px 0 20px 0;
+
+            }
+        }
+    }
+
+    &__image-box {
+        width: 60%;
+        position: relative;
+
+
+        @include breakpoint(phablet) {
+            width: 100%;
+            height: 50%;
+            padding-left: 20px;
+
+        }
+
+        @include breakpoint(newMobile) {
+
+            padding-left: 0;
+
+        }
+
+
+        .image-desktop {
+            position: absolute;
+            width: 80%;
+            height: 70%;
+            // right: 10%;
+            bottom: 1px;
+
+            @include breakpoint(phablet) {
+                width: 100%;
+                height: 90%;
+
+            }
+
+
+
+
+        }
+
+    }
+}
+
+.section-one {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0E0E0E;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+
+
+
+    &:before {
+        content: "";
+
+        background: url(../Assets/HELLO.svg) no-repeat;
+        position: absolute;
+        top: 20%;
+        right: 2%;
+        width: 700px;
+        height: 200px;
+        z-index: 100;
+
+        @include breakpoint(phablet) {
+            display: none;
+
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+        margin: 0;
+        background-image: url(../Assets/photo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        @include breakpoint(phablet) {
+            height: 50vh;
+            width: 100vw;
+            background-image: url(../Assets/photo_mobile.jpg);
+
+        }
+
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+
+        @include breakpoint(phablet) {
+            height: 50vh;
+            width: 100vw;
+
+        }
+
+
+    }
+
+    .right-box-title {
+        display: flex;
+        justify-content: flex-end;
+        height: 30%;
+
+
+        @include breakpoint(phablet) {
+            height: 10%;
+
+        }
+    }
+
+    .left-box-title {
+        display: flex;
+        justify-content: flex-end;
+        height: 30%;
+
+
+        @include breakpoint(phablet) {
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+
+        }
+
+
+        .title {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            padding-right: 5%;
+            text-align: right;
+
+            @include breakpoint(phablet) {
+                text-align: center;
+                padding-right: 0;
+                padding-left: 0;
+
+
+            }
+
+            h2 {
+                text-align: right;
+                padding: 5px 0;
+
+                @include breakpoint(phablet) {
+                    text-align: center;
+
+                }
+            }
+
+            h1 {
+                padding: 5px 0;
+            }
+        }
+
+    }
+
+    .right-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 70%;
+
+        @include breakpoint(phablet) {
+            justify-content: center;
+            align-items: center;
+            padding-top: 5%;
+        }
+
+
+
+
+        p {
+            padding-right: 30%;
+            padding-bottom: 30px;
+            padding-left: 5%;
+
+
+            @include breakpoint(phablet) {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+
+            @include breakpoint(newMobile) {
+                padding-left: 10%;
+            }
+
+
+        }
+
+
+
+    }
+
+    .left-text {
+        height: 70%;
+
+        @include breakpoint(phablet) {
+            height: 10%;
+
+        }
+    }
+
+}
+
+.section-two {
+    display: flex;
+    background: linear-gradient(90deg, rgba(5, 27, 25, 1) 0%, rgba(14, 43, 39, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+
+    .cajtel {
+        background: url("../Assets/cajtel.png") no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+
+
+
+
+    }
+
+}
+
+.section-three {
+    display: flex;
+    background: linear-gradient(90deg, rgba(0, 38, 12, 1) 0%, rgba(27, 64, 39, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+    .woodland {
+        background: url("../Assets/woodland.png") no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+
+
+    }
+
+}
+
+
+.section-four {
+    display: flex;
+    background: linear-gradient(90deg, rgba(36, 91, 53, 1) 0%, rgba(85, 137, 49, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+    .bondex {
+        background: url("../Assets/bondex.png") no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+
+
+    }
+
+}
+
+.section-five {
+    display: flex;
+    background: linear-gradient(90deg, rgba(13, 29, 36, 1) 0%, rgba(0, 44, 53, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+    .maciej {
+        background: url("../Assets/maciej.png") no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+
+
+    }
+
+}
+
+.section-six {
+    display: flex;
+    background: linear-gradient(90deg, rgba(21, 32, 46, 1) 0%, rgba(36, 53, 76, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+    .brycki {
+        background: url("../Assets/brycki.png") no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+
+
+    }
+
+}
+
+
+.section-seven {
+    display: flex;
+    background: linear-gradient(90deg, rgba(18, 8, 34, 1) 0%, rgba(52, 47, 80, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+    .spmedia {
+        background: url("../Assets/spmedia.png") no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+
+
+    }
+
+}
+
+.section-eight {
+    display: flex;
+    background: linear-gradient(90deg, rgba(248, 244, 245, 1) 0%, rgba(222, 205, 211, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+
+    }
+
+    .maya {
+        background: url("../Assets/maya.png") no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+
+
+    }
+
+}
+
+.section-nine {
+    display: flex;
+    position: relative;
+    background-color: #141414;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+
+
+    // &:after {
+    //     content: "";
+    //     position: absolute;
+    //     background-image: url(../Assets/CONTACT.svg);
+    //     width: 300px;
+    //     height: 100px;
+    //     bottom: 0;
+    //     right: 0;
+    // }
+
+    .contact-email {
+        display: flex;
+        width: 100vw;
+        padding-top: 40px;
+
+        @include breakpoint(phablet) {
+            flex-direction: column;
+            padding-bottom: 40px;
+
+        }
+
+        h1 {
+
+
+            @include breakpoint(phablet) {
+                padding-right: 10%;
+
+            }
+
+
+
+        }
+
+        a {
+            @include breakpoint(phablet) {
+                font-size: 25px;
+
+            }
+        }
+    }
+
+
+    .contact-img {
+        position: absolute;
+        background: url("../Assets/CONTACT.svg") no-repeat center;
+        background-size: contain;
+        top: 70%;
+        right: 0;
+        width: 70vw;
+        height: 20vh;
+        
+
+
+    }
+
+
+    .contact-sm {
+        display: flex;
+        width: 100vw;
+
+        @include breakpoint(phablet) {
+            flex-direction: column;
+
+        }
+    }
+
+    a {
+
+        text-decoration: none;
+        font-family: "ProximaBold";
+        font-size: 30px;
+        color: #747474;
+        padding-left: 10px;
+        margin-top: 5px;
+        transition: 0.6s;
+
+        @include breakpoint(phablet) {
+            font-size: 25px;
+
+        }
+    }
+
+    a:hover {
+        border: none;
+        color: white;
+
+        text-decoration: underline;
+
+
+    }
+}
