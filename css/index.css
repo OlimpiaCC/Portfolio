@@ -1626,7 +1626,7 @@ html.fp-enabled,
 
 .cajtel-case-slider .carousel__item:nth-child(3) {
   background: url("../Assets/cajtel1.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .cajtel-case-slider .carousel__item:nth-child(4) {
@@ -2115,7 +2115,7 @@ html.fp-enabled,
 
 .maya-case-slider .carousel__item:nth-child(3) {
   background: url("../Assets/maya1.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .maya-case-slider .carousel__item:nth-child(4) {
