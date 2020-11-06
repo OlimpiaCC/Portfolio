@@ -323,6 +323,10 @@ html.fp-enabled,
   padding: 10px;
 }
 
+.nav-wrapper .left-block .contact-icons a:hover {
+  border: none;
+}
+
 .nav-wrapper .left-block .small-nav {
   position: fixed;
   display: -webkit-box;
@@ -343,8 +347,8 @@ html.fp-enabled,
   text-decoration: none;
   font-size: 8px;
   border: 1px solid transparent;
-  border-bottom: 1px solid #1A1A1A;
-  color: #1A1A1A;
+  border-bottom: 1px solid #484848;
+  color: #484848;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

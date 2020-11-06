@@ -31,6 +31,12 @@
             img {
                 padding: 10px;
             }
+
+            a {
+                &:hover {
+                    border: none;
+                }
+            }
         }
 
         .small-nav {
@@ -48,8 +54,8 @@
                 text-decoration: none;
                 font-size: 8px;
                 border: 1px solid transparent;
-                border-bottom: 1px solid #1A1A1A;
-                color: #1A1A1A;
+                border-bottom: 1px solid #484848;
+                color: #484848;
                 transition: 0.5s;
 
                 &:hover {
@@ -561,7 +567,7 @@
         right: 0;
         width: 70vw;
         height: 20vh;
-        
+
 
 
     }
