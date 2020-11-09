@@ -4,7 +4,7 @@
 }
 
 .spmedia-case-slider {
-    height: 120vh;
+    padding-top: 20%;
     background-color: #111111;
 
     .carousel {
@@ -21,9 +21,14 @@
             list-style: none;
             position: relative;
             width: 100%;
-            height: 300px;
+            height: 700px;
             justify-content: center;
             perspective: 300px;
+
+            @include breakpoint(phablet) {
+                height: 500px;
+
+            }
         }
 
         &__item {
@@ -33,14 +38,28 @@
             color: #fff;
             font-size: 0px;
             width: 30%;
-            height: 900px;
+            height: 700px;
             // box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
             position: absolute;
             transition: all .3s ease-in;
 
+
+            @include breakpoint(phablet) {
+                height: 500px;
+                width: 37%;
+
+            }
+
             &:nth-child(1) {
                 background: url("../Assets/spmedia4.jpg") no-repeat;
                 background-size: cover;
+
+
+            @include breakpoint(phablet) {
+                background-size: contain;
+
+
+            }
 
 
 
@@ -61,7 +80,7 @@
 
             &:nth-child(4) {
                 background: url("../Assets/spmedia2.jpg") no-repeat;
-                background-size: contain;
+                background-size: cover;
 
             }
 
