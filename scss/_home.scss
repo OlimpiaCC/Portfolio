@@ -197,9 +197,9 @@
         position: absolute;
         top: 20%;
         right: 2%;
+        left: 52%;
         width: 700px;
         height: 200px;
-        z-index: 100;
 
         @include breakpoint(phablet) {
             display: none;
